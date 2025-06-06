@@ -1,9 +1,16 @@
 
 import os
-from utils.rag_pipeline import load_to_embeddings
-from config import *
-from utils.ollama import *
-from ui import main_ui
+# from utils.rag_pipeline import load_to_embeddings
+# from config import *
+# from utils.ollama import *
+# from ui import main_ui
+
+from app.utils.rag_pipeline import load_to_embeddings
+from app.config import *
+from app.utils.ollama import *
+from app.ui import main_ui
+
+
 
 
 

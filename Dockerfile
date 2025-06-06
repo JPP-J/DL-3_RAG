@@ -36,4 +36,5 @@ COPY start.sh /start.sh
 RUN chmod +x /start.sh
 
 # Start Ollama + your app (parallel)
-CMD ["/start.sh"]
+CMD ["sh", "start.sh"]
+

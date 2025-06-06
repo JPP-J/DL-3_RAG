@@ -5,12 +5,13 @@ from chromadb.config import Settings
 from chromadb.utils import embedding_functions
 import ollama
 import os
-from config import *
 import requests
-from utils.rag_pipeline import load_or_create_vectorstore
 import json
 from datetime import datetime
 from pythainlp.util import normalize
+
+from app.utils.rag_pipeline import load_or_create_vectorstore
+from app.config import *
 
 # NO USE
 def setting_ollama_embedding_function():

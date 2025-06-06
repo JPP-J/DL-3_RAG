@@ -1,9 +1,9 @@
 # ui.py
 
 import gradio as gr
-from config import *
-from utils.rag_pipeline import *
-from utils.ollama import response_answer_gr
+from app.config import *
+from app.utils.rag_pipeline import *
+from app.utils.ollama import response_answer_gr
 
 # UI
 # Admin interface for uploading files 

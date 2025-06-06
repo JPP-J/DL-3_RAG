@@ -25,7 +25,7 @@ jobs:
 
       - name: Run unit tests
         run: |
-          pytest
+            PYTHONPATH=app pytest
 
       - name: Run Docker Compose Smoke Test
         run: |
