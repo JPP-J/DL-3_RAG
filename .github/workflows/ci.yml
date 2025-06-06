@@ -26,6 +26,11 @@ jobs:
       - name: Run unit tests
         run: |
             PYTHONPATH=app pytest
+      
+      - name: Clean up Docker and system
+        run: |
+          docker system prune -af --volumes
+          sudo rm -rf /tmp/*
 
       - name: Run Docker Compose Smoke Test
         run: |
