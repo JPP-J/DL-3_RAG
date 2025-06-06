@@ -29,11 +29,11 @@ jobs:
 
       - name: Run Docker Compose Smoke Test
         run: |
-          docker-compose up -d --build
+          docker compose up -d --build
           sleep 15  # give it some time to start
           docker ps  # optional: check running containers
-          docker-compose logs  # optional: output logs
-          docker-compose down 
+          docker compose logs  # optional: output logs
+          docker compose down
 
   build-and-push:
     needs: test
