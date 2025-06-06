@@ -77,6 +77,6 @@ def load_or_create_vectorstore():
     if os.path.exists(f"{VECTOR_DB_PATH}/index.faiss"):
         return FAISS.load_local(VECTOR_DB_PATH, HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL_NAME), allow_dangerous_deserialization=True)
     else:
-        docs = load_folder_documents()
+        docs = load_text_file()
         chunks = split_documents(docs)
         return embed_documents(chunks)
