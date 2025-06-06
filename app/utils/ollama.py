@@ -141,7 +141,8 @@ def build_prompt(query, context_chunks=None, messages=None):
 
     prompt = ""
     if cleaned_chunks:
-        prompt += f"Context:\n{'\n'.join(cleaned_chunks)}\n\n"
+        joined_chunks = "\n".join(cleaned_chunks)
+        prompt += f"Context:\n{joined_chunks}\n\n"
     if formatted_history:
         prompt += f"Chat History:\n{formatted_history}\n"
     
