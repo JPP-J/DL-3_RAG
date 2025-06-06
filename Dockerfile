@@ -26,6 +26,7 @@ WORKDIR /app
 COPY . .
 
 # Install Python dependencies
+RUN  pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose Ollama's default port (11434)
