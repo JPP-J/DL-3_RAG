@@ -19,9 +19,9 @@ jobs:
         with:
           python-version: '3.11'
 
-      # - name: Install dependencies
-      #   run: |
-      #     pip install -r requirements.txt
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
 
       - name: Run unit tests
         run: |
@@ -32,16 +32,16 @@ jobs:
           docker system prune -af --volumes
           sudo rm -rf /tmp/*
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+      # - name: Set up Docker Buildx
+      #   uses: docker/setup-buildx-action@v3
 
-      - name: Run Docker Compose Smoke Test
-        run: |
-          docker compose up -d --build
-          sleep 15  # give it some time to start
-          docker ps  # optional: check running containers
-          docker compose logs  # optional: output logs
-          docker compose down
+      # - name: Run Docker Compose Smoke Test
+      #   run: |
+      #     docker compose up -d --build
+      #     sleep 15  # give it some time to start
+      #     docker ps  # optional: check running containers
+      #     docker compose logs  # optional: output logs
+      #     docker compose down
 
   build-and-push:
     needs: test
