@@ -28,3 +28,8 @@ A Retrieval-Augmented Generation (RAG) system combining Ollama LLM and FAISS vec
 - Use Ollama LLM to generate context-aware answers  
 - Save chat history with persistent logs  
 - Dockerized for easy deployment  
+
+## Provides
+- [CODE DEMO V.1 NOTEBOOK & Python Files Details in project](DEMO_RAG.ipynb)
+- [DEMO_PROJECT_EXAMPLE1](https://drive.google.com/file/d/1RT2TAWfUH7-CnTr7oNyb4ZSWbTKF1omP/view?usp=sharing)
+- [DEMO_PROJECT_EXAMPLE2](https://drive.google.com/file/d/1iuttgnk7uVmzI5tzOH01yVddA610XHOa/view?usp=sharing)
