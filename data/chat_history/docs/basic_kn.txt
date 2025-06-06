@@ -1,0 +1,53 @@
+# Geography
+"Mount Everest is the highest mountain in the world, located in the Himalayas.",
+"The Amazon River is one of the longest rivers on Earth, flowing through South America.",
+
+# Science
+"Photosynthesis is the process by which green plants convert sunlight into chemical energy.",
+"Albert Einstein developed the theory of relativity, revolutionizing modern physics.",
+
+# Technology
+"Blockchain is a decentralized ledger technology used in cryptocurrencies like Bitcoin.",
+"Machine learning is a subset of artificial intelligence that focuses on pattern recognition and prediction.",
+
+# History
+"The French Revolution began in 1789 and led to major political and social changes in France.",
+"The Roman Empire was one of the most powerful civilizations in history, lasting for over a thousand years.",
+
+# Health
+"The human immune system defends the body against infectious diseases and harmful invaders.",
+"Cardiovascular exercise helps improve heart health and overall physical endurance.",
+
+# Literature
+"William Shakespeare was an English playwright and poet, known for works like 'Hamlet' and 'Romeo and Juliet'.",
+"George Orwell's '1984' is a dystopian novel exploring themes of surveillance and authoritarianism.",
+
+# Space
+"The James Webb Space Telescope is designed to study the formation of stars and galaxies.",
+"Mars is often called the Red Planet due to its iron oxide-rich soil."# Geography
+"Mount Everest is the highest mountain in the world, located in the Himalayas.",
+"The Amazon River is one of the longest rivers on Earth, flowing through South America.",
+
+# Science
+"Photosynthesis is the process by which green plants convert sunlight into chemical energy.",
+"Albert Einstein developed the theory of relativity, revolutionizing modern physics.",
+
+# Technology
+"Blockchain is a decentralized ledger technology used in cryptocurrencies like Bitcoin.",
+"Machine learning is a subset of artificial intelligence that focuses on pattern recognition and prediction.",
+
+# History
+"The French Revolution began in 1789 and led to major political and social changes in France.",
+"The Roman Empire was one of the most powerful civilizations in history, lasting for over a thousand years.",
+
+# Health
+"The human immune system defends the body against infectious diseases and harmful invaders.",
+"Cardiovascular exercise helps improve heart health and overall physical endurance.",
+
+# Literature
+"William Shakespeare was an English playwright and poet, known for works like 'Hamlet' and 'Romeo and Juliet'.",
+"George Orwell's '1984' is a dystopian novel exploring themes of surveillance and authoritarianism.",
+
+# Space
+"The James Webb Space Telescope is designed to study the formation of stars and galaxies.",
+"Mars is often called the Red Planet due to its iron oxide-rich soil."

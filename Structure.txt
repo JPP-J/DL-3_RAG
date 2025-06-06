@@ -1,0 +1,22 @@
+Project/
+│
+├── app/                       # All application logic
+│   ├── __init__.py
+│   ├── main.py                # Entry point (calls UI)
+│   ├── config.py              # Configuration variables
+│   ├── ui.py                  # Gradio UI (admin + chatbot)
+│   │
+│   └── utils/                 # Utility modules
+│       ├── __init__.py
+│       ├── ollama.py          # Ollama LLM interaction
+│       ├── rag_pipeline.py    # Vectorization and FAISS logic
+│
+├── data/                      # Runtime/generated data
+│   ├── chat_history/          # Saved chat sessions (JSON)
+│   └── docs/                  # Uploaded text documents
+│
+├── vector_store/             # FAISS vector index
+│
+├── requirements.txt          # Python dependencies
+├── Dockerfile                # Docker build configuration
+└── README.md                 # Project documentation
