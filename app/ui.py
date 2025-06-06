@@ -68,5 +68,5 @@ def main_ui():
     gr.TabbedInterface(
         [admin_app, chat_app],
         ["Admin Upload", "User Chat"],
-        title="RAG Application with Ollama and Fiass"
+        title="RAG Application with Ollama and Faiss"
     ).launch()
