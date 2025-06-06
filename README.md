@@ -33,3 +33,48 @@ A Retrieval-Augmented Generation (RAG) system combining Ollama LLM and FAISS vec
 - [CODE DEMO V.1 NOTEBOOK & Python Files Details in project](DEMO_RAG.ipynb)
 - [DEMO_PROJECT_EXAMPLE1](https://drive.google.com/file/d/1RT2TAWfUH7-CnTr7oNyb4ZSWbTKF1omP/view?usp=sharing)
 - [DEMO_PROJECT_EXAMPLE2](https://drive.google.com/file/d/1iuttgnk7uVmzI5tzOH01yVddA610XHOa/view?usp=sharing)
+
+## Usage
+### Docker image-container 
+1. Build the Docker image:
+
+    ```bash
+    docker build -t rag-ollama-app .
+    ```
+
+2. Run the container (make sure Ollama is running on your host):
+
+    ```bash
+    docker run -p 7860:7860 -p 11434:11434 \
+      -v $(pwd)/faiss_index:/app/faiss_index \
+      -v $(pwd)/chat_history:/app/chat_history \
+      -v $(pwd)/docs:/app/docs \
+      rag-ollama-app
+    ```
+
+3. Open your browser at `http://localhost:7860`.
+
+### Docker-compose 
+1. Build docker-compose to create containers 
+   
+    ```bash
+    docker-compose up --build
+    ```
+
+2. When going to stop containers 
+
+   ``` bash
+   docker-compose stop
+   ```
+3. Then later restart containers  with
+
+   ``` bash
+   docker-compose start
+   ```
+  
+4. After usage containers, going to shutdown and cleanup
+    ```bash
+    docker-compose down
+    ```
+    
+
