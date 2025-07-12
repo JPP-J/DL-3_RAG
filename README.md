@@ -4,8 +4,44 @@
 
 This repo is home to the code that accompanies Jidapa's *RAG Application with Ollama, FAISS, and Gradio UI Project*:
 
-## Description  
-A Retrieval-Augmented Generation (RAG) system combining Ollama LLM and FAISS vector search to answer user questions based on indexed text documents. The app features a Gradio UI for uploading documents, chatting, and saving history. Fully containerized for easy deployment with Docker.
+## 📌 Overview
+
+This project implements a **Retrieval-Augmented Generation (RAG)** system that combines vector-based document search with large language model (LLM) generation to provide accurate, context-aware answers to user queries. The system leverages **Ollama LLM** for generative responses and **FAISS** for fast semantic search on indexed text documents.
+
+### 🧩 Problem Statement
+
+Users often need to find precise information from large collections of text documents. Traditional search methods can miss context or nuance, and purely generative models may hallucinate or lack grounding. This project addresses these challenges by augmenting LLM generation with retrieval over relevant document passages, improving answer accuracy and reliability.
+
+### 🔍 Approach
+
+- Use **FAISS** for efficient vector search over document embeddings (using `all-MiniLM-L6-v2`).
+- Generate responses with **Ollama's LLM** (`gemma3:1b`), grounded by retrieved document context.
+- Provide a user-friendly **Gradio UI** to upload documents, interact via chat, and view/save conversation history.
+- Fully containerize the application with **Docker** for easy deployment and data persistence.
+
+### 🎢 Processes
+
+1. Upload and preprocess text documents.
+2. Generate embeddings with HuggingFace models.
+3. Index embeddings with FAISS for fast retrieval.
+4. Query with user input, retrieve relevant documents.
+5. Generate context-aware answers using Ollama LLM.
+6. Save chat history as JSON logs for session continuity.
+7. Deploy with Docker and Docker Compose.
+
+### 🎯 Results & Impact
+
+- Enables interactive, context-aware question answering over custom documents.
+- Reduces manual search effort and improves user productivity.
+- Provides a scalable and portable solution suitable for enterprise or research applications.
+
+### ⚙️ Development Challenges
+
+- Efficient embedding and indexing of diverse document formats.
+- Integrating vector search results seamlessly with LLM generation.
+- Managing persistent chat history and ensuring data integrity.
+- Containerizing complex dependencies for smooth deployment across environments.
+
 
 ## Features  
 - Upload and index text files for vector search (FAISS)  
@@ -23,16 +59,11 @@ A Retrieval-Augmented Generation (RAG) system combining Ollama LLM and FAISS vec
 - **Embedded model**: all-MiniLM-L6-v2
 - **LLM model**: gemma3:1b
   
-## Features
-- Upload and index text documents for vector search  
-- Use Ollama LLM to generate context-aware answers  
-- Save chat history with persistent logs  
-- Dockerized for easy deployment  
 
 ## Provides
-- [CODE DEMO V.1 NOTEBOOK & Python Files Details in project](DEMO_RAG.ipynb)
-- [DEMO_PROJECT_EXAMPLE1](https://drive.google.com/file/d/1RT2TAWfUH7-CnTr7oNyb4ZSWbTKF1omP/view?usp=sharing)
-- [DEMO_PROJECT_EXAMPLE2](https://drive.google.com/file/d/1iuttgnk7uVmzI5tzOH01yVddA610XHOa/view?usp=sharing)
+- [`CODE DEMO V.1 NOTEBOOK & Python Files Details in project`](DEMO_RAG.ipynb)
+- [`DEMO_PROJECT_EXAMPLE1`](https://drive.google.com/file/d/1RT2TAWfUH7-CnTr7oNyb4ZSWbTKF1omP/view?usp=sharing)
+- [`DEMO_PROJECT_EXAMPLE2`](https://drive.google.com/file/d/1iuttgnk7uVmzI5tzOH01yVddA610XHOa/view?usp=sharing)
 
 ## Usage
 ### Docker image-container 
